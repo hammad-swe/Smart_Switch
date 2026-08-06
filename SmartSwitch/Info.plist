@@ -4,12 +4,8 @@
 <dict>
 	<key>NSBonjourServices</key>
 	<array>
-		<string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
-&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
-&lt;plist version="1.0"&gt;
-&lt;string&gt;&lt;/string&gt;
-&lt;/plist&gt;
-_localsend._tcp</string>
+		<string>_localsend._tcp</string>
+		<string>_localsend._udp</string>
 	</array>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>This app requires access to your photo library to select photos and videos to transfer.</string>

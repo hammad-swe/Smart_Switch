@@ -29,7 +29,7 @@ public struct DeviceInfo: Codable, Equatable, Sendable {
         deviceType: String = "mobile",
         fingerprint: String,
         port: Int = 53317,
-        protocolType: String = "https",
+        protocolType: String = "http",
         announce: Bool? = true
     ) {
         self.alias = alias
