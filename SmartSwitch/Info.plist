@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd"&gt;
+&lt;plist version="1.0"&gt;
+&lt;string&gt;&lt;/string&gt;
+&lt;/plist&gt;
+_localsend._tcp</string>
+	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>This app requires access to your photo library to select photos and videos to transfer.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>This app requires permission to save received photos and videos to your photo library.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>This app requires access to your contacts to export them for sharing.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>This app requires access to your local network to find other devices and transfer files.</string>
+</dict>
+</plist>

@@ -1,0 +1,48 @@
+{
+  "source": "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/UI/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "IP: %@",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 29
+        }
+      },
+      {
+        "comment": "",
+        "key": "Wi-Fi Connected",
+        "location": {
+          "startingColumn": 82,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Wi-Fi Network",
+        "location": {
+          "startingColumn": 102,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "SmartSwitch",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "iOS ↔ Android P2P File Transfer",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 59
+        }
+      }
+    ]
+  },
+  "version": 1
+}

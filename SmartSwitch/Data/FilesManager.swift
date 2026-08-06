@@ -31,6 +31,13 @@ public class FilesManager: ObservableObject {
     }
 
     public static func createFileItem(from url: URL) -> FileItem {
+        let isAccessing = url.startAccessingSecurityScopedResource()
+        defer {
+            if isAccessing {
+                url.stopAccessingSecurityScopedResource()
+            }
+        }
+
         let fileName = url.lastPathComponent
         let resources = try? url.resourceValues(forKeys: [.fileSizeKey, .contentTypeKey])
         let size = Int64(resources?.fileSize ?? 0)

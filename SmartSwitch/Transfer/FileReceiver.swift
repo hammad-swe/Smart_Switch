@@ -40,11 +40,29 @@ public class FileReceiver: ObservableObject {
             let mime = metadata.fileType.lowercased()
 
             if mime.contains("image") || ["jpg", "jpeg", "png", "heic"].contains(lowerExt) {
-                photosManager.savePhotoToLibrary(fileURL: destURL) { _, _ in }
+                photosManager.savePhotoToLibrary(fileURL: destURL) { success, error in
+                    if success {
+                        print("Successfully saved image to Photos Library")
+                    } else {
+                        print("Failed to save image to Photos Library: \(error?.localizedDescription ?? "unknown error")")
+                    }
+                }
             } else if mime.contains("video") || ["mp4", "mov", "m4v"].contains(lowerExt) {
-                photosManager.saveVideoToLibrary(fileURL: destURL) { _, _ in }
+                photosManager.saveVideoToLibrary(fileURL: destURL) { success, error in
+                    if success {
+                        print("Successfully saved video to Photos Library")
+                    } else {
+                        print("Failed to save video to Photos Library: \(error?.localizedDescription ?? "unknown error")")
+                    }
+                }
             } else if mime.contains("vcard") || lowerExt == "vcf" {
-                contactsManager.importVCard(from: destURL) { _, _ in }
+                contactsManager.importVCard(from: destURL) { count, error in
+                    if let error = error {
+                        print("Failed to import VCard: \(error.localizedDescription)")
+                    } else {
+                        print("Successfully imported \(count) contacts")
+                    }
+                }
             }
 
             completion(true)

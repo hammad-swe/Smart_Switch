@@ -97,6 +97,23 @@ public struct HomeView: View {
                     }
                 }
             )
+            .onAppear {
+                requestStartupPermissions()
+            }
+        }
+    }
+
+    private func requestStartupPermissions() {
+        // Request Photos library authorization
+        let photosManager = PhotosManager()
+        photosManager.requestPermission { granted in
+            print("Photos permission granted: \(granted)")
+        }
+
+        // Request Contacts address book authorization
+        let contactsManager = ContactsManager()
+        contactsManager.requestPermission { granted in
+            print("Contacts permission granted: \(granted)")
         }
     }
 }

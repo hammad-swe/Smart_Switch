@@ -78,7 +78,18 @@ public class FileSender: ObservableObject {
         token: String,
         progressHandler: @escaping (Double) -> Void
     ) async throws {
-        guard let localURL = file.localURL, FileManager.default.fileExists(atPath: localURL.path) else {
+        guard let localURL = file.localURL else {
+            throw TransferError.unknown("Local URL missing for \(file.fileName)")
+        }
+
+        let isAccessing = localURL.startAccessingSecurityScopedResource()
+        defer {
+            if isAccessing {
+                localURL.stopAccessingSecurityScopedResource()
+            }
+        }
+
+        guard FileManager.default.fileExists(atPath: localURL.path) else {
             throw TransferError.unknown("Local file not found for \(file.fileName)")
         }
 
@@ -101,7 +112,7 @@ public class FileSender: ObservableObject {
 
         let fileData = try Data(contentsOf: localURL, options: .mappedIfSafe)
 
-        let (_, response) = try await URLSession.shared.upload(for: request, from: fileData)
+        let (_, response) = try await TrustManager.shared.session.upload(for: request, from: fileData)
 
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw TransferError.connectionFailed("Upload rejected by server")

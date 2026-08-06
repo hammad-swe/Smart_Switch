@@ -1,4 +1,6 @@
 import SwiftUI
+import Photos
+import Contacts
 
 public struct ReceiveConsentView: View {
     @ObservedObject var sessionManager: SessionManager
@@ -63,7 +65,7 @@ public struct ReceiveConsentView: View {
                 }
 
                 Button(action: {
-                    sessionManager.respondToIncomingRequest(accept: true)
+                    acceptTransferWithPermissions()
                 }) {
                     Text("Accept")
                         .font(.headline)
@@ -80,5 +82,43 @@ public struct ReceiveConsentView: View {
         .background(RoundedRectangle(cornerRadius: 24).fill(Color(UIColor.systemBackground)))
         .shadow(radius: 20)
         .padding(.horizontal, 20)
+    }
+
+    private func acceptTransferWithPermissions() {
+        let hasMedia = request.files.values.contains { file in
+            let mime = file.fileType.lowercased()
+            let lowerExt = (file.fileName as NSString).pathExtension.lowercased()
+            return mime.contains("image") || mime.contains("video") || ["jpg", "jpeg", "png", "heic", "mp4", "mov", "m4v"].contains(lowerExt)
+        }
+
+        let hasContacts = request.files.values.contains { file in
+            let mime = file.fileType.lowercased()
+            let lowerExt = (file.fileName as NSString).pathExtension.lowercased()
+            return mime.contains("vcard") || lowerExt == "vcf"
+        }
+
+        func proceed() {
+            DispatchQueue.main.async {
+                sessionManager.respondToIncomingRequest(accept: true)
+            }
+        }
+
+        if hasMedia {
+            PHPhotoLibrary.requestAuthorization(for: .readWrite) { _ in
+                if hasContacts {
+                    CNContactStore().requestAccess(for: .contacts) { _, _ in
+                        proceed()
+                    }
+                } else {
+                    proceed()
+                }
+            }
+        } else if hasContacts {
+            CNContactStore().requestAccess(for: .contacts) { _, _ in
+                proceed()
+            }
+        } else {
+            proceed()
+        }
     }
 }

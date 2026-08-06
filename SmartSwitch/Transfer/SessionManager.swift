@@ -16,6 +16,7 @@ public class SessionManager: ObservableObject, LocalHTTPSServerDelegate {
 
     private var server: LocalHTTPSServer?
     private var cancellables = Set<AnyCancellable>()
+    private var scanTimer: Timer?
 
     public init() {
         let name = UIDevice.current.name
@@ -29,6 +30,32 @@ public class SessionManager: ObservableObject, LocalHTTPSServerDelegate {
     }
 
     private func setupBindings() {
+        // Forward changes from nested observable objects to notify SwiftUI of updates
+        networkMonitor.objectWillChange
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in self?.objectWillChange.send() }
+            .store(in: &cancellables)
+
+        multicastService.objectWillChange
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in self?.objectWillChange.send() }
+            .store(in: &cancellables)
+
+        subnetScanner.objectWillChange
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in self?.objectWillChange.send() }
+            .store(in: &cancellables)
+
+        fileSender.objectWillChange
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in self?.objectWillChange.send() }
+            .store(in: &cancellables)
+
+        fileReceiver.objectWillChange
+            .receive(on: RunLoop.main)
+            .sink { [weak self] _ in self?.objectWillChange.send() }
+            .store(in: &cancellables)
+
         networkMonitor.$isConnected
             .sink { [weak self] isConnected in
                 if isConnected {
@@ -43,9 +70,20 @@ public class SessionManager: ObservableObject, LocalHTTPSServerDelegate {
     public func startServices() {
         server?.start()
         multicastService.start(deviceInfo: myDeviceInfo)
+
+        // Automatically trigger subnet scanner fallback on start
+        scanSubnetFallback()
+
+        // Setup a periodic timer to scan every 10 seconds to bypass multicast limits
+        scanTimer?.invalidate()
+        scanTimer = Timer.scheduledTimer(withTimeInterval: 10.0, repeats: true) { [weak self] _ in
+            self?.scanSubnetFallback()
+        }
     }
 
     public func stopServices() {
+        scanTimer?.invalidate()
+        scanTimer = nil
         server?.stop()
         multicastService.stop()
     }
@@ -76,6 +114,7 @@ public class SessionManager: ObservableObject, LocalHTTPSServerDelegate {
         guard let request = pendingIncomingRequest, let callback = incomingConsentCallback else { return }
 
         if accept {
+            self.previousRequest = request
             let sessionId = UUID().uuidString
             var fileTokens: [String: String] = [:]
             for (fileId, _) in request.files {

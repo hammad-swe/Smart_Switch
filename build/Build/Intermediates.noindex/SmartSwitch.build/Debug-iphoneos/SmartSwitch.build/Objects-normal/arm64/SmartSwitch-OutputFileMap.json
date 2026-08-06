@@ -1,0 +1,279 @@
+{
+  "" : {
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitch-primary.dia",
+    "emit-module-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitch-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitch-primary-emit-module.dia",
+    "pch" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitch-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitch-primary.swiftdeps"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/ContentView.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Data/ContactsManager.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContactsManager.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContactsManager.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContactsManager.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContactsManager.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContactsManager.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContactsManager.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContactsManager.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ContactsManager~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Data/FilesManager.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FilesManager.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FilesManager.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FilesManager.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FilesManager.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FilesManager.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FilesManager.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FilesManager.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FilesManager~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Data/PhotosManager.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PhotosManager.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PhotosManager.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PhotosManager.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PhotosManager.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PhotosManager.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PhotosManager.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PhotosManager.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PhotosManager~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Models/DeviceInfo.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/DeviceInfo.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/DeviceInfo.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/DeviceInfo.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/DeviceInfo.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/DeviceInfo.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/DeviceInfo.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/DeviceInfo.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/DeviceInfo~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Models/FileItem.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Models/PeerDevice.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Models/SessionContext.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Models/TransferError.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/CertificateGenerator.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/LocalHTTPSServer.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/MulticastService.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/NetworkMonitor.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/SubnetScanner.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SubnetScanner.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SubnetScanner.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SubnetScanner.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SubnetScanner.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SubnetScanner.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SubnetScanner.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SubnetScanner.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SubnetScanner~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/TrustManager.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TrustManager.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TrustManager.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TrustManager.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TrustManager.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TrustManager.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TrustManager.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TrustManager.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TrustManager~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/SmartSwitchApp.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitchApp.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitchApp.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitchApp.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitchApp.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitchApp.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitchApp.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitchApp.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SmartSwitchApp~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Transfer/FileReceiver.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileReceiver.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileReceiver.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileReceiver.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileReceiver.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileReceiver.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileReceiver.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileReceiver.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileReceiver~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Transfer/FileSender.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileSender.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileSender.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileSender.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileSender.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileSender.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileSender.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileSender.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileSender~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Transfer/SessionManager.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionManager.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionManager.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionManager.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionManager.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionManager.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionManager.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionManager.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionManager~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Transfer/TransferSession.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferSession.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferSession.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferSession.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferSession.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferSession.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferSession.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferSession.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferSession~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/UI/HomeView.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/HomeView.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/HomeView.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/HomeView.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/HomeView.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/HomeView.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/HomeView~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/UI/PeerDiscoveryView.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDiscoveryView.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDiscoveryView.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDiscoveryView.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDiscoveryView.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDiscoveryView.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDiscoveryView.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDiscoveryView.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDiscoveryView~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/UI/ReceiveConsentView.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ReceiveConsentView.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ReceiveConsentView.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ReceiveConsentView.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ReceiveConsentView.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ReceiveConsentView.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ReceiveConsentView.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ReceiveConsentView.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/ReceiveConsentView~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/UI/SendView.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SendView.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SendView.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SendView.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SendView.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SendView.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SendView.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SendView.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SendView~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/UI/SettingsView.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/UI/TransferProgressView.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferProgressView.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferProgressView.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferProgressView.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferProgressView.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferProgressView.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferProgressView.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferProgressView.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferProgressView~partial.swiftmodule"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

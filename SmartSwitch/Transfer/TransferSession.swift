@@ -43,7 +43,7 @@ public class TransferSession {
             throw TransferError.invalidPayload
         }
 
-        let (data, response) = try await URLSession.shared.data(for: request)
+        let (data, response) = try await TrustManager.shared.session.data(for: request)
 
         guard let httpResponse = response as? HTTPURLResponse else {
             throw TransferError.connectionFailed("No HTTP response")

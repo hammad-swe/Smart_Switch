@@ -1,0 +1,30 @@
+{
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Models/FileItem.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.dia",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/FileItem.swiftdeps"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Models/PeerDevice.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.dia",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/PeerDevice.swiftdeps"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Models/SessionContext.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.dia",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/SessionContext.swiftdeps"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Models/TransferError.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.dia",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/TransferError.swiftdeps"
+  }
+}

@@ -49,14 +49,23 @@ public class SubnetScanner: ObservableObject {
     }
 
     private func probeHost(ip: String, port: Int) async -> PeerDevice? {
-        guard let url = URL(string: "http://\(ip):\(port)/api/localsend/v2/info") else { return nil }
+        // Try HTTPS first (Android standard)
+        if let peer = await tryProbe(scheme: "https", ip: ip, port: port) {
+            return peer
+        }
+        // Fallback to HTTP (iOS standard)
+        return await tryProbe(scheme: "http", ip: ip, port: port)
+    }
+
+    private func tryProbe(scheme: String, ip: String, port: Int) async -> PeerDevice? {
+        guard let url = URL(string: "\(scheme)://\(ip):\(port)/api/localsend/v2/info") else { return nil }
 
         var request = URLRequest(url: url)
-        request.timeoutInterval = 1.5
+        request.timeoutInterval = 1.0
         request.httpMethod = "GET"
 
         do {
-            let (data, response) = try await URLSession.shared.data(for: request)
+            let (data, response) = try await TrustManager.shared.session.data(for: request)
             guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
                 return nil
             }

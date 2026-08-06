@@ -1,0 +1,48 @@
+{
+  "source": "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/UI/PeerDiscoveryView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Searching for Devices...",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 34
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ensure recipient is connected to the same Wi-Fi network",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 37
+        }
+      },
+      {
+        "comment": "",
+        "key": "No nearby devices found yet.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Scan Subnet Fallback",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ • %@",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 94
+        }
+      }
+    ]
+  },
+  "version": 1
+}

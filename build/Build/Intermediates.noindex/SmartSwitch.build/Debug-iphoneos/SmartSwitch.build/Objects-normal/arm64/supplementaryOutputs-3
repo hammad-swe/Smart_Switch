@@ -1,0 +1,30 @@
+{
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/CertificateGenerator.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.dia",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/CertificateGenerator.swiftdeps"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/LocalHTTPSServer.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.dia",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/LocalHTTPSServer.swiftdeps"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/MulticastService.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.dia",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/MulticastService.swiftdeps"
+  },
+  "/Users/mbp/Documents/SmartSwitch/SmartSwitch/SmartSwitch/Network/NetworkMonitor.swift" : {
+    "const-values" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.swiftconstvalues",
+    "dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.d",
+    "diagnostics" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.dia",
+    "object" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.o",
+    "swift-dependencies" : "/Users/mbp/Documents/SmartSwitch/SmartSwitch/build/Build/Intermediates.noindex/SmartSwitch.build/Debug-iphoneos/SmartSwitch.build/Objects-normal/arm64/NetworkMonitor.swiftdeps"
+  }
+}

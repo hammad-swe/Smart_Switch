@@ -44,7 +44,15 @@ public struct SendView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
                     Button(action: {
-                        photosManager.fetchRecentPhotos()
+                        if photosManager.authorizationStatus == .notDetermined {
+                            photosManager.requestPermission { granted in
+                                if granted {
+                                    photosManager.fetchRecentPhotos()
+                                }
+                            }
+                        } else {
+                            photosManager.fetchRecentPhotos()
+                        }
                     }) {
                         Label("Photos & Videos", systemImage: "photo.on.rectangle.angled")
                             .font(.subheadline)

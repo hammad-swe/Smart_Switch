@@ -10,9 +10,22 @@
 		10D5B4E53021BABB00D81897 /* SmartSwitch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartSwitch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		1047AD9930231D6000C59E84 /* Exceptions for "SmartSwitch" folder in "SmartSwitch" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 10D5B4E43021BABB00D81897 /* SmartSwitch */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		10D5B4E73021BABB00D81897 /* SmartSwitch */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1047AD9930231D6000C59E84 /* Exceptions for "SmartSwitch" folder in "SmartSwitch" target */,
+			);
 			path = SmartSwitch;
 			sourceTree = "<group>";
 		};
@@ -256,6 +269,8 @@
 				DEVELOPMENT_TEAM = LFR364W3LU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartSwitch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSContactsUsageDescription = "SmartSwitch needs contact access to export and import contacts during transfer.";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "SmartSwitch needs local network access to discover and transfer files with nearby devices.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "SmartSwitch needs permission to save received photos to your Photo Library.";
@@ -292,6 +307,8 @@
 				DEVELOPMENT_TEAM = LFR364W3LU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartSwitch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_NSContactsUsageDescription = "SmartSwitch needs contact access to export and import contacts during transfer.";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "SmartSwitch needs local network access to discover and transfer files with nearby devices.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "SmartSwitch needs permission to save received photos to your Photo Library.";

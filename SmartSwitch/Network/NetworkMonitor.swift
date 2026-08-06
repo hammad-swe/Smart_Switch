@@ -18,9 +18,10 @@ public class NetworkMonitor: ObservableObject {
     public func start() {
         monitor.pathUpdateHandler = { [weak self] path in
             DispatchQueue.main.async {
-                self?.isConnected = path.status == .satisfied
-                self?.isWiFi = path.usesInterfaceType(.wifi)
-                self?.localIPAddress = self?.getWiFiIPAddress() ?? ""
+                let ip = self?.getWiFiIPAddress() ?? ""
+                self?.localIPAddress = ip
+                self?.isConnected = !ip.isEmpty
+                self?.isWiFi = path.usesInterfaceType(.wifi) || !ip.isEmpty
             }
         }
         monitor.start(queue: queue)
@@ -39,11 +40,15 @@ public class NetworkMonitor: ObservableObject {
 
             if (flags & (IFF_UP | IFF_RUNNING)) != 0 && addr.sa_family == UInt8(AF_INET) {
                 let name = String(cString: ptr.pointee.ifa_name)
-                if name == "en0" || name == "p2p0" { // en0 is standard Wi-Fi on iOS
+                // Exclude loopbacks (lo), cellular (pdp_ip), VPNs (utun), link-local (awdl)
+                if !name.hasPrefix("lo") && !name.hasPrefix("pdp_ip") && !name.hasPrefix("utun") && !name.hasPrefix("awdl") {
                     var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
                     if getnameinfo(ptr.pointee.ifa_addr, socklen_t(addr.sa_len), &hostname, socklen_t(hostname.count), nil, socklen_t(0), NI_NUMERICHOST) == 0 {
-                        address = String(cString: hostname)
-                        if name == "en0" { break } // Prefer en0
+                        let ipStr = String(cString: hostname)
+                        if !ipStr.hasPrefix("169.254") && !ipStr.isEmpty {
+                            address = ipStr
+                            if name == "en0" { break } // Prefer standard iOS Wi-Fi interface
+                        }
                     }
                 }
             }

@@ -60,24 +60,28 @@ public class LocalHTTPSServer: ObservableObject {
         isRunning = false
     }
 
+    private var activeHandlers: [UUID: HTTPConnectionHandler] = [:]
+
     private func handleNewConnection(_ connection: NWConnection) {
-        connection.start(queue: .global(qos: .userInitiated))
-        receiveRequest(on: connection)
+        let handler = HTTPConnectionHandler(connection: connection, server: self)
+        activeHandlers[handler.id] = handler
+        handler.start()
     }
 
-    private func receiveRequest(on connection: NWConnection) {
-        connection.receive(minimumIncompleteLength: 1, maximumLength: 10 * 1024 * 1024) { [weak self] data, context, isComplete, error in
-            guard let data = data, !data.isEmpty else {
-                connection.cancel()
-                return
-            }
+    fileprivate func removeHandler(id: UUID) {
+        activeHandlers.removeValue(forKey: id)
+    }
 
-            self?.processHTTPData(data, connection: connection)
+    fileprivate func processHTTPData(_ data: Data, connection: NWConnection) {
+        guard let bodyRange = data.range(of: Data("\r\n\r\n".utf8)) else {
+            sendResponse(connection: connection, statusCode: 400, body: "Bad Request")
+            return
         }
-    }
 
-    private func processHTTPData(_ data: Data, connection: NWConnection) {
-        guard let requestString = String(data: data, encoding: .utf8) else {
+        let headerData = data.subdata(in: 0..<bodyRange.lowerBound)
+        let bodyData = data.subdata(in: bodyRange.upperBound..<data.count)
+
+        guard let requestString = String(data: headerData, encoding: .utf8) else {
             sendResponse(connection: connection, statusCode: 400, body: "Bad Request")
             return
         }
@@ -110,12 +114,6 @@ public class LocalHTTPSServer: ObservableObject {
                     queryItems[pair[0]] = pair[1]
                 }
             }
-        }
-
-        // Locate HTTP Body
-        var bodyData = Data()
-        if let bodyRange = data.range(of: Data("\r\n\r\n".utf8)) {
-            bodyData = data.subdata(in: bodyRange.upperBound..<data.count)
         }
 
         // Route Request
@@ -235,3 +233,89 @@ public class LocalHTTPSServer: ObservableObject {
         }))
     }
 }
+
+fileprivate class HTTPConnectionHandler {
+    let id = UUID()
+    let connection: NWConnection
+    weak var server: LocalHTTPSServer?
+
+    private var receivedData = Data()
+    private var headerLength: Int?
+    private var contentLength: Int?
+
+    init(connection: NWConnection, server: LocalHTTPSServer) {
+        self.connection = connection
+        self.server = server
+    }
+
+    func start() {
+        connection.start(queue: .global(qos: .userInitiated))
+        readNext()
+    }
+
+    private func readNext() {
+        connection.receive(minimumIncompleteLength: 1, maximumLength: 65536) { [weak self] data, context, isComplete, error in
+            guard let self = self else { return }
+
+            if let error = error {
+                print("HTTP connection receive error: \(error)")
+                self.close()
+                return
+            }
+
+            if let data = data, !data.isEmpty {
+                self.receivedData.append(data)
+                self.evaluateBuffer()
+            } else if isComplete {
+                self.close()
+            } else {
+                self.close()
+            }
+        }
+    }
+
+    private func evaluateBuffer() {
+        if headerLength == nil {
+            if let range = receivedData.range(of: Data("\r\n\r\n".utf8)) {
+                let hLength = range.upperBound
+                self.headerLength = hLength
+
+                let headerData = receivedData.subdata(in: 0..<range.lowerBound)
+                if let headerString = String(data: headerData, encoding: .utf8) {
+                    let lines = headerString.components(separatedBy: "\r\n")
+                    for line in lines {
+                        let parts = line.components(separatedBy: ":")
+                        if parts.count >= 2, parts[0].trimmingCharacters(in: .whitespaces).lowercased() == "content-length" {
+                            if let length = Int(parts[1].trimmingCharacters(in: .whitespaces)) {
+                                self.contentLength = length
+                                break
+                            }
+                        }
+                    }
+                }
+
+                if self.contentLength == nil {
+                    self.contentLength = 0
+                }
+            }
+        }
+
+        if let hLength = headerLength, let cLength = contentLength {
+            let bodyLength = receivedData.count - hLength
+            if bodyLength >= cLength {
+                let fullData = receivedData
+                server?.processHTTPData(fullData, connection: connection)
+                server?.removeHandler(id: id)
+                return
+            }
+        }
+
+        readNext()
+    }
+
+    private func close() {
+        connection.cancel()
+        server?.removeHandler(id: id)
+    }
+}
+
