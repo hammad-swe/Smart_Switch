@@ -3,6 +3,8 @@ import Network
 import Combine
 
 public protocol LocalHTTPSServerDelegate: AnyObject {
+    func didReceiveConnectRequest(peer: DeviceInfo, completion: @escaping (Bool) -> Void)
+    func didReceiveDisconnectRequest()
     func didReceivePrepareUpload(request: PrepareUploadRequest, completion: @escaping (Bool, PrepareUploadResponse?) -> Void)
     func didReceiveUploadChunk(sessionId: String, fileId: String, token: String, data: Data, isLastChunk: Bool, completion: @escaping (Bool) -> Void)
 }
@@ -124,6 +126,12 @@ public class LocalHTTPSServer: ObservableObject {
         case ("POST", "/api/localsend/v2/register"):
             handleRegister(connection: connection, body: bodyData)
 
+        case ("POST", "/api/localsend/v2/connect"):
+            handleConnect(connection: connection, body: bodyData)
+
+        case ("POST", "/api/localsend/v2/disconnect"):
+            handleDisconnect(connection: connection)
+
         case ("POST", "/api/localsend/v2/prepare-upload"):
             handlePrepareUpload(connection: connection, body: bodyData)
 
@@ -136,6 +144,32 @@ public class LocalHTTPSServer: ObservableObject {
         default:
             sendResponse(connection: connection, statusCode: 404, body: "Not Found")
         }
+    }
+
+    private func handleConnect(connection: NWConnection, body: Data) {
+        do {
+            let peerInfo = try JSONDecoder().decode(DeviceInfo.self, from: body)
+            if let delegate = delegate {
+                delegate.didReceiveConnectRequest(peer: peerInfo) { accepted in
+                    if accepted {
+                        self.sendResponse(connection: connection, statusCode: 200, body: "{\"status\":\"accepted\"}")
+                    } else {
+                        self.sendResponse(connection: connection, statusCode: 403, body: "{\"status\":\"rejected\"}")
+                    }
+                }
+            } else {
+                sendResponse(connection: connection, statusCode: 200, body: "{\"status\":\"accepted\"}")
+            }
+        } catch {
+            sendResponse(connection: connection, statusCode: 400, body: "Bad Request")
+        }
+    }
+
+    private func handleDisconnect(connection: NWConnection) {
+        if let delegate = delegate {
+            delegate.didReceiveDisconnectRequest()
+        }
+        sendResponse(connection: connection, statusCode: 200, body: "{\"message\":\"OK\"}")
     }
 
     // MARK: - API Endpoint Handlers

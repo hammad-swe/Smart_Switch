@@ -4,6 +4,7 @@ import Combine
 public class FileSender: ObservableObject {
     @Published public var overallProgress: Double = 0.0
     @Published public var currentFileIndex: Int = 0
+    @Published public var totalFilesCount: Int = 0
     @Published public var isSending: Bool = false
 
     public init() {}
@@ -17,6 +18,7 @@ public class FileSender: ObservableObject {
             self.isSending = true
             self.overallProgress = 0.0
             self.currentFileIndex = 0
+            self.totalFilesCount = context.files.count
         }
 
         Task {

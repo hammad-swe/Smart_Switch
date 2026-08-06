@@ -5,6 +5,11 @@ public struct PeerDiscoveryView: View {
     @Binding var selectedPeer: PeerDevice?
     @State private var isPulsing = false
 
+    public init(sessionManager: SessionManager, selectedPeer: Binding<PeerDevice?> = .constant(nil)) {
+        self.sessionManager = sessionManager
+        self._selectedPeer = selectedPeer
+    }
+
     public var body: some View {
         VStack(spacing: 20) {
             // Radar / Pulsing Animation Header
@@ -98,18 +103,28 @@ public struct PeerDiscoveryView: View {
 
                                     Spacer()
 
-                                    Image(systemName: selectedPeer?.id == peer.id ? "checkmark.circle.fill" : "chevron.right")
-                                        .font(.title3)
-                                        .foregroundColor(selectedPeer?.id == peer.id ? .blue : .secondary)
+                                    if case .connecting(let connectingPeer) = sessionManager.connectionStatus, connectingPeer.id == peer.id {
+                                        ProgressView()
+                                            .progressViewStyle(CircularProgressViewStyle())
+                                    } else {
+                                        Button(action: {
+                                            sessionManager.connect(to: peer)
+                                        }) {
+                                            Text("Connect")
+                                                .font(.subheadline)
+                                                .fontWeight(.bold)
+                                                .padding(.horizontal, 16)
+                                                .padding(.vertical, 8)
+                                                .background(Color.blue)
+                                                .foregroundColor(.white)
+                                                .cornerRadius(12)
+                                        }
+                                    }
                                 }
                                 .padding()
                                 .background(
                                     RoundedRectangle(cornerRadius: 16)
-                                        .fill(selectedPeer?.id == peer.id ? Color.blue.opacity(0.1) : Color(UIColor.secondarySystemBackground))
-                                )
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 16)
-                                        .stroke(selectedPeer?.id == peer.id ? Color.blue : Color.clear, lineWidth: 2)
+                                        .fill(Color(UIColor.secondarySystemBackground))
                                 )
                             }
                         }

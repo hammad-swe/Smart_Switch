@@ -18,10 +18,10 @@ public struct SendView: View {
 
     public var body: some View {
         VStack(spacing: 16) {
-            // Header with target peer info
+            // Header with target peer info and Disconnect button
             HStack {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Sending to")
+                    Text("Connected to")
                         .font(.caption)
                         .foregroundColor(.secondary)
                     Text(targetPeer.alias)
@@ -29,12 +29,20 @@ public struct SendView: View {
                         .fontWeight(.bold)
                 }
                 Spacer()
-                ZStack {
-                    Circle()
-                        .fill(Color.blue.opacity(0.15))
-                        .frame(width: 40, height: 40)
-                    Image(systemName: "paperplane.fill")
-                        .foregroundColor(.blue)
+                Button(action: {
+                    sessionManager.disconnect()
+                }) {
+                    HStack(spacing: 4) {
+                        Image(systemName: "link.broken")
+                        Text("Disconnect")
+                    }
+                    .font(.subheadline)
+                    .fontWeight(.bold)
+                    .foregroundColor(.red)
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 10)
+                    .background(Color.red.opacity(0.15))
+                    .cornerRadius(12)
                 }
             }
             .padding()
@@ -259,7 +267,22 @@ public struct SendView: View {
                         self.isTransferring = false
                         switch result {
                         case .success:
+                            let count = self.selectedItems.count
+                            for file in context.files {
+                                self.sessionManager.historyManager.addRecord(
+                                    fileName: file.fileName,
+                                    fileSize: file.size,
+                                    isSent: true,
+                                    peerAlias: self.targetPeer.alias
+                                )
+                            }
                             self.selectedItems.removeAll()
+                            self.sessionManager.transferSummaryMessage = "Successfully sent \(count) file(s)!"
+                            self.sessionManager.showTransferSummary = true
+                            self.sessionManager.sendLocalNotification(
+                                title: "Files Sent",
+                                body: "Successfully sent \(count) file(s)!"
+                            )
                         case .failure(let err):
                             self.transferError = err.localizedDescription
                         }

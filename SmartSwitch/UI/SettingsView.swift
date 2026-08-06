@@ -2,93 +2,155 @@ import SwiftUI
 
 public struct SettingsView: View {
     @ObservedObject var sessionManager: SessionManager
+    @State private var showPrivacySheet = false
 
     public var body: some View {
-        Form {
-            Section(header: Text("Device Identity")) {
+        ScrollView {
+            VStack(spacing: 20) {
+                // Header
                 HStack {
-                    Text("Device Alias")
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Settings")
+                            .font(.system(size: 28, weight: .bold, design: .rounded))
+                        Text("Preferences & App Information")
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                    }
                     Spacer()
-                    Text(sessionManager.myDeviceInfo.alias)
-                        .foregroundColor(.secondary)
                 }
+                .padding(.top, 10)
 
-                HStack {
-                    Text("Device Model")
-                    Spacer()
-                    Text(sessionManager.myDeviceInfo.deviceModel)
-                        .foregroundColor(.secondary)
-                }
+                // Appearance
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "circle.righthalf.filled")
+                            .foregroundColor(.blue)
+                        Text("Appearance")
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                    }
 
-                HStack {
-                    Text("Protocol Version")
-                    Spacer()
-                    Text(sessionManager.myDeviceInfo.version)
-                        .foregroundColor(.secondary)
-                }
-            }
-
-            Section(header: Text("Network Status")) {
-                HStack {
-                    Text("Wi-Fi Connection")
-                    Spacer()
-                    Image(systemName: sessionManager.networkMonitor.isConnected ? "wifi" : "wifi.slash")
-                        .foregroundColor(sessionManager.networkMonitor.isConnected ? .green : .red)
-                    Text(sessionManager.networkMonitor.isConnected ? "Connected" : "Disconnected")
-                        .foregroundColor(.secondary)
-                }
-
-                HStack {
-                    Text("Local IP Address")
-                    Spacer()
-                    Text(sessionManager.networkMonitor.localIPAddress.isEmpty ? "None" : sessionManager.networkMonitor.localIPAddress)
-                        .font(.system(.body, design: .monospaced))
-                        .foregroundColor(.secondary)
-                }
-
-                HStack {
-                    Text("Local Server Port")
-                    Spacer()
-                    Text("\(sessionManager.myDeviceInfo.port)")
-                        .font(.system(.body, design: .monospaced))
-                        .foregroundColor(.secondary)
-                }
-            }
-
-            Section(header: Text("Security Architecture")) {
-                VStack(alignment: .leading, spacing: 6) {
-                    Text("TLS Fingerprint (SHA-256)")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                    Text(sessionManager.myDeviceInfo.fingerprint)
-                        .font(.system(.caption2, design: .monospaced))
-                        .foregroundColor(.primary)
-                }
-                .padding(.vertical, 4)
-            }
-
-            Section(header: Text("Diagnostics & Troubleshooting")) {
-                VStack(alignment: .leading, spacing: 8) {
-                    Label("AP / Client Isolation", systemImage: "shield.trianglebadge.exclamationmark")
+                    Text("Choose Theme Mode")
                         .font(.subheadline)
-                        .fontWeight(.semibold)
-                    Text("If nearby devices cannot be discovered, ensure AP Isolation or Guest Mode is disabled on your Wi-Fi router.")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
-                }
-                .padding(.vertical, 4)
 
-                VStack(alignment: .leading, spacing: 8) {
-                    Label("Port 53317 (TCP/UDP)", systemImage: "network")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                    Text("SmartSwitch uses port 53317 for HTTPS REST API and UDP Multicast announcements.")
-                        .font(.caption)
-                        .foregroundColor(.secondary)
+                    Picker("Theme Mode", selection: $sessionManager.appTheme) {
+                        Text("System").tag("system")
+                        Text("Light").tag("light")
+                        Text("Dark").tag("dark")
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
                 }
-                .padding(.vertical, 4)
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 20).fill(Color(UIColor.secondarySystemBackground)))
+
+                // Device Identity
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "info.circle")
+                            .foregroundColor(.blue)
+                        Text("Device Identity")
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                    }
+
+                    SettingsRow(label: "Device Alias", value: sessionManager.myDeviceInfo.alias)
+                    SettingsRow(label: "Device Model", value: sessionManager.myDeviceInfo.deviceModel)
+                    SettingsRow(label: "Protocol Version", value: sessionManager.myDeviceInfo.version)
+                }
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 20).fill(Color(UIColor.secondarySystemBackground)))
+
+                // Privacy & Security
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "lock.shield")
+                            .foregroundColor(.blue)
+                        Text("Security & Privacy")
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                    }
+
+                    Button(action: { showPrivacySheet = true }) {
+                        HStack {
+                            Image(systemName: "hand.raised.fill")
+                                .foregroundColor(.blue)
+                            Text("Privacy Policy")
+                                .font(.subheadline)
+                                .foregroundColor(.primary)
+                            Spacer()
+                            Text("View")
+                                .font(.subheadline)
+                                .fontWeight(.bold)
+                                .foregroundColor(.blue)
+                        }
+                        .padding(.vertical, 4)
+                    }
+                }
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 20).fill(Color(UIColor.secondarySystemBackground)))
+
+                // App Information
+                VStack(alignment: .leading, spacing: 12) {
+                    HStack(spacing: 8) {
+                        Image(systemName: "app.badge")
+                            .foregroundColor(.blue)
+                        Text("About App")
+                            .font(.headline)
+                            .foregroundColor(.blue)
+                    }
+
+                    SettingsRow(label: "Application Version", value: "SmartSwitch v2.1.0")
+                    SettingsRow(label: "Build Engine", value: "LocalSend Protocol v2")
+                }
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 20).fill(Color(UIColor.secondarySystemBackground)))
+            }
+            .padding(.horizontal, 20)
+            .padding(.bottom, 100)
+        }
+        .sheet(isPresented: $showPrivacySheet) {
+            VStack(spacing: 20) {
+                Text("Privacy Policy")
+                    .font(.title2)
+                    .fontWeight(.bold)
+                    .padding(.top, 20)
+
+                Text("SmartSwitch operates completely offline on your local Wi-Fi network.\n\n• No files or data are uploaded to external cloud servers.\n• File transfers are encrypted point-to-point using TLS certificates.\n• Connections require explicit user consent.")
+                    .font(.body)
+                    .foregroundColor(.secondary)
+                    .multilineTextAlignment(.leading)
+                    .padding()
+
+                Spacer()
+
+                Button(action: { showPrivacySheet = false }) {
+                    Text("Close")
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(12)
+                }
+                .padding(.horizontal, 20)
+                .padding(.bottom, 20)
             }
         }
-        .navigationTitle("Settings & Info")
+    }
+}
+
+private struct SettingsRow: View {
+    let label: String
+    let value: String
+
+    var body: some View {
+        HStack {
+            Text(label)
+                .font(.subheadline)
+            Spacer()
+            Text(value)
+                .font(.subheadline)
+                .foregroundColor(.secondary)
+        }
     }
 }
