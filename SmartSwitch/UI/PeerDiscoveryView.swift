@@ -3,15 +3,29 @@ import SwiftUI
 public struct PeerDiscoveryView: View {
     @ObservedObject var sessionManager: SessionManager
     @Binding var selectedPeer: PeerDevice?
+    var onBack: (() -> Void)? = nil
     @State private var isPulsing = false
 
-    public init(sessionManager: SessionManager, selectedPeer: Binding<PeerDevice?> = .constant(nil)) {
+    public init(sessionManager: SessionManager, selectedPeer: Binding<PeerDevice?> = .constant(nil), onBack: (() -> Void)? = nil) {
         self.sessionManager = sessionManager
         self._selectedPeer = selectedPeer
+        self.onBack = onBack
     }
 
     public var body: some View {
         VStack(spacing: 20) {
+            if let onBack = onBack {
+                HStack {
+                    Button(action: onBack) {
+                        HStack(spacing: 4) {
+                            Image(systemName: "chevron.left")
+                            Text("Back")
+                        }
+                        .foregroundColor(.blue)
+                    }
+                    Spacer()
+                }
+            }
             // Radar / Pulsing Animation Header
             ZStack {
                 Circle()

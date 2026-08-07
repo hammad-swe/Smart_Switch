@@ -3,6 +3,12 @@ import SwiftUI
 public struct HistoryView: View {
     @ObservedObject var historyManager = HistoryManager.shared
     @State private var selectedFilter = 0 // 0: All, 1: Sent, 2: Received
+    @State private var previewItem: URLItem? = nil
+
+    private struct URLItem: Identifiable {
+        let id = UUID()
+        let url: URL
+    }
 
     private var filteredItems: [TransferHistoryItem] {
         switch selectedFilter {
@@ -65,33 +71,42 @@ public struct HistoryView: View {
                 ScrollView {
                     VStack(spacing: 12) {
                         ForEach(filteredItems) { item in
-                            HStack(spacing: 14) {
-                                Image(systemName: item.isSent ? "arrow.up.right.circle.fill" : "arrow.down.left.circle.fill")
-                                    .font(.title2)
-                                    .foregroundColor(item.isSent ? .blue : .green)
-                                    .padding(8)
-                                    .background((item.isSent ? Color.blue : Color.green).opacity(0.15))
-                                    .clipShape(Circle())
+                            Button(action: {
+                                let downloads = FilesManager.shared.getDownloadsDirectory()
+                                let targetURL = downloads.appendingPathComponent(item.fileName)
+                                if FileManager.default.fileExists(atPath: targetURL.path) {
+                                    previewItem = URLItem(url: targetURL)
+                                }
+                            }) {
+                                HStack(spacing: 14) {
+                                    Image(systemName: item.isSent ? "arrow.up.right.circle.fill" : "arrow.down.left.circle.fill")
+                                        .font(.title2)
+                                        .foregroundColor(item.isSent ? .blue : .green)
+                                        .padding(8)
+                                        .background((item.isSent ? Color.blue : Color.green).opacity(0.15))
+                                        .clipShape(Circle())
 
-                                VStack(alignment: .leading, spacing: 2) {
-                                    Text(item.fileName)
-                                        .font(.subheadline)
-                                        .fontWeight(.semibold)
-                                        .lineLimit(1)
-                                    Text("\(item.isSent ? "To" : "From"): \(item.peerAlias) • \(item.timestamp, formatter: dateFormatter)")
+                                    VStack(alignment: .leading, spacing: 2) {
+                                        Text(item.fileName)
+                                            .font(.subheadline)
+                                            .fontWeight(.semibold)
+                                            .foregroundColor(.primary)
+                                            .lineLimit(1)
+                                        Text("\(item.isSent ? "To" : "From"): \(item.peerAlias) • \(item.timestamp, formatter: dateFormatter)")
+                                            .font(.caption)
+                                            .foregroundColor(.secondary)
+                                    }
+
+                                    Spacer()
+
+                                    Text(FormatUtils.formatFileSize(item.fileSize))
                                         .font(.caption)
+                                        .fontWeight(.medium)
                                         .foregroundColor(.secondary)
                                 }
-
-                                Spacer()
-
-                                Text("\(item.fileSize / (1024 * 1024)) MB")
-                                    .font(.caption)
-                                    .fontWeight(.medium)
-                                    .foregroundColor(.secondary)
+                                .padding()
+                                .background(RoundedRectangle(cornerRadius: 16).fill(Color(UIColor.secondarySystemBackground)))
                             }
-                            .padding()
-                            .background(RoundedRectangle(cornerRadius: 16).fill(Color(UIColor.secondarySystemBackground)))
                         }
                     }
                     .padding(.bottom, 100)
@@ -99,5 +114,8 @@ public struct HistoryView: View {
             }
         }
         .padding(.horizontal, 20)
+        .sheet(item: $previewItem) { item in
+            QuickLookPreview(url: item.url)
+        }
     }
 }

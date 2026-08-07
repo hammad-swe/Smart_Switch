@@ -3,6 +3,7 @@ import UniformTypeIdentifiers
 import Combine
 
 public class FilesManager: ObservableObject {
+    public static let shared = FilesManager()
     @Published public var savedFiles: [URL] = []
 
     public init() {

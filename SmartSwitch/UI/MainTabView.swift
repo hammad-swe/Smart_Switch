@@ -33,9 +33,21 @@ public struct MainTabView: View {
 
                     Group {
                         if transferSubMode == "receive" {
-                            ReceiveView(sessionManager: sessionManager)
+                            ReceiveView(
+                                sessionManager: sessionManager,
+                                onBack: {
+                                    selectedTab = 0
+                                    transferSubMode = nil
+                                }
+                            )
                         } else {
-                            PeerDiscoveryView(sessionManager: sessionManager)
+                            PeerDiscoveryView(
+                                sessionManager: sessionManager,
+                                onBack: {
+                                    selectedTab = 0
+                                    transferSubMode = nil
+                                }
+                            )
                         }
                     }
                     .tabItem {

@@ -4,6 +4,7 @@ public struct DashboardView: View {
     @ObservedObject var sessionManager: SessionManager
     let onNavigateToSend: () -> Void
     let onNavigateToReceive: () -> Void
+    @State private var showWifiAlert = true
 
     public var body: some View {
         ScrollView {
@@ -179,6 +180,13 @@ public struct DashboardView: View {
             }
             .padding(.horizontal, 20)
             .padding(.bottom, 100)
+        }
+        .alert(isPresented: $showWifiAlert) {
+            Alert(
+                title: Text("Connection Requirement"),
+                message: Text("Please make sure both your Android and iOS devices are connected to the same Wi-Fi network or Mobile Hotspot."),
+                dismissButton: .default(Text("Got It"))
+            )
         }
     }
 }

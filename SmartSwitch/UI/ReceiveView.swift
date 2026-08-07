@@ -2,14 +2,29 @@ import SwiftUI
 
 public struct ReceiveView: View {
     @ObservedObject var sessionManager: SessionManager
+    var onBack: (() -> Void)? = nil
     @State private var isPulsing = false
 
-    public init(sessionManager: SessionManager) {
+    public init(sessionManager: SessionManager, onBack: (() -> Void)? = nil) {
         self.sessionManager = sessionManager
+        self.onBack = onBack
     }
 
     public var body: some View {
         VStack(spacing: 30) {
+            if let onBack = onBack {
+                HStack {
+                    Button(action: onBack) {
+                        HStack(spacing: 4) {
+                            Image(systemName: "chevron.left")
+                            Text("Back")
+                        }
+                        .foregroundColor(.blue)
+                    }
+                    Spacer()
+                }
+            }
+
             VStack(spacing: 6) {
                 Text("Receive Mode")
                     .font(.title2)
@@ -76,3 +91,4 @@ public struct ReceiveView: View {
         }
     }
 }
+

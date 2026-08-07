@@ -25,6 +25,7 @@ public class MulticastService: ObservableObject {
 
             let params = NWParameters.udp
             params.allowLocalEndpointReuse = true
+            params.requiredInterfaceType = .wifi
 
             connectionGroup = NWConnectionGroup(with: group!, using: params)
 

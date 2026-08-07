@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showSplash = true
+    @AppStorage("hasCompletedOnboarding") private var hasCompletedOnboarding = false
     @AppStorage("app_theme") private var appTheme = "system"
 
     var colorScheme: ColorScheme? {
@@ -23,6 +24,12 @@ struct ContentView: View {
                             }
                         }
                     }
+            } else if !hasCompletedOnboarding {
+                OnboardingView(onFinish: {
+                    withAnimation {
+                        self.hasCompletedOnboarding = true
+                    }
+                })
             } else {
                 HomeView()
             }
